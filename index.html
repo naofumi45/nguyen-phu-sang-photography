@@ -1,132 +1,183 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Nguyễn Phú Sang – Photographer</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nguyễn Phú Sang – Photographer</title>
 
-<style>
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  background: #0f0f0f;
-  color: #f2f2f2;
-}
-section {
-  padding: 56px 20px;
-}
-.hero {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.hero h1 {
-  font-size: 32px;
-  margin: 0 0 12px;
-}
-.hero p {
-  font-size: 18px;
-  line-height: 1.6;
-  opacity: 0.85;
-}
-.subtitle {
-  margin-top: 20px;
-  font-style: italic;
-  opacity: 0.75;
-}
-h2 {
-  font-size: 24px;
-  margin-bottom: 20px;
-}
-.gallery img {
-  width: 100%;
-  border-radius: 12px;
-  margin-bottom: 16px;
-}
-.pricing {
-  background: #151515;
-  border-radius: 16px;
-  padding: 24px;
-}
-.price-item {
-  margin-bottom: 20px;
-}
-.price-item strong {
-  display: block;
-  font-size: 18px;
-}
-.contact a {
-  display: block;
-  padding: 16px;
-  border-radius: 12px;
-  background: #ffffff;
-  color: #000;
-  text-align: center;
-  text-decoration: none;
-  font-weight: 600;
-}
-footer {
-  text-align: center;
-  font-size: 14px;
-  opacity: 0.5;
-  padding-bottom: 24px;
-}
-</style>
+  <style>
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #0f0f0f;
+      color: #f2f2f2;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    section {
+      padding: 56px 20px;
+      max-width: 520px;
+      margin: 0 auto;
+    }
+
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .profile-img {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin: 0 auto 24px;
+      border: 2px solid rgba(255,255,255,0.15);
+    }
+
+    .hero h1 {
+      font-size: 32px;
+      margin: 0 0 8px;
+      font-weight: 600;
+    }
+
+    .hero p {
+      font-size: 16px;
+      opacity: 0.8;
+      margin: 0;
+    }
+
+    .subtitle {
+      margin-top: 24px;
+      font-size: 16px;
+      font-style: italic;
+      opacity: 0.7;
+      line-height: 1.6;
+    }
+
+    h2 {
+      font-size: 22px;
+      margin-bottom: 20px;
+      font-weight: 600;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 14px;
+      margin-bottom: 18px;
+    }
+
+    .text-block {
+      font-size: 16px;
+      line-height: 1.7;
+      opacity: 0.85;
+    }
+
+    .pricing {
+      background: #151515;
+      border-radius: 18px;
+      padding: 24px;
+      font-size: 15px;
+    }
+
+    .price-item {
+      margin-bottom: 20px;
+    }
+
+    .price-item strong {
+      display: block;
+      font-size: 17px;
+      margin-bottom: 6px;
+    }
+
+    .contact a {
+      display: block;
+      padding: 18px;
+      border-radius: 14px;
+      background: #ffffff;
+      color: #000;
+      text-align: center;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 16px;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 13px;
+      opacity: 0.5;
+      padding: 24px 0 40px;
+    }
+  </style>
 </head>
 
 <body>
 
-<section class="hero">
-  <h1>Nguyễn Phú Sang</h1>
-  <p>Photographer</p>
-  <div class="subtitle">
-    “Điều đọng lại sau cùng<br/>mới là thứ đáng giá.”
-  </div>
-</section>
+  <!-- HERO / PROFILE -->
+  <section class="hero">
+    <img src="profile.jpg" alt="Nguyễn Phú Sang" class="profile-img">
 
-<section>
-  <h2>Portfolio</h2>
+    <h1>Nguyễn Phú Sang</h1>
+    <p>Photographer</p>
 
-  <div class="gallery">
-    <img src="don.jpg" alt="Chụp cá nhân">
-    <img src="couple.jpg" alt="Chụp couple">
-    <img src="group.jpg" alt="Chụp nhóm">
-  </div>
-</section>
-
-<section>
-  <p>
-    Tôi tập trung vào ánh sáng và khoảnh khắc.<br/>
-    Mỗi buổi chụp là một trải nghiệm nhẹ nhàng,<br/>
-    nơi cảm xúc được giữ lại đúng lúc.
-  </p>
-</section>
-
-<section>
-  <h2>Giá chụp</h2>
-  <div class="pricing">
-    <div class="price-item">
-      <strong>Chụp ngoại cảnh</strong>
-      Cá nhân: 499.000đ<br/>
-      Couple: 999.000đ<br/>
-      Nhóm từ 2 người: 449.000đ/người
+    <div class="subtitle">
+      “Điều đọng lại sau cùng<br/>
+      mới là thứ đáng giá.”
     </div>
+  </section>
 
-    <div class="price-item">
-      <strong>Chụp tại studio</strong>
-      Giá điều chỉnh theo không gian & bối cảnh
+  <!-- PORTFOLIO -->
+  <section>
+    <h2>Portfolio</h2>
+
+    <div class="gallery">
+      <img src="don.jpg" alt="Chụp cá nhân">
+      <img src="couple.jpg" alt="Chụp couple">
+      <img src="group.jpg" alt="Chụp nhóm">
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="contact">
-  <a href="https://zalo.me/XXXXXXXXX">Liên hệ qua Zalo</a>
-</section>
+  <!-- PHILOSOPHY -->
+  <section>
+    <div class="text-block">
+      Tôi tập trung vào ánh sáng và khoảnh khắc.<br/>
+      Mỗi buổi chụp là một trải nghiệm nhẹ nhàng,<br/>
+      nơi cảm xúc được giữ lại đúng lúc.
+    </div>
+  </section>
 
-<footer>
-  © The Future Plus
-</footer>
+  <!-- PRICING -->
+  <section>
+    <h2>Giá chụp</h2>
+
+    <div class="pricing">
+      <div class="price-item">
+        <strong>Chụp ngoại cảnh</strong>
+        Cá nhân: 499.000đ<br/>
+        Couple: 999.000đ<br/>
+        Nhóm từ 2 người: 449.000đ/người
+      </div>
+
+      <div class="price-item">
+        <strong>Chụp tại studio</strong>
+        Giá điều chỉnh theo không gian & bối cảnh
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact">
+    <a href="https://zalo.me/XXXXXXXXX" target="_blank">
+      Liên hệ qua Zalo
+    </a>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    © The Future Plus
+  </footer>
 
 </body>
 </html>
